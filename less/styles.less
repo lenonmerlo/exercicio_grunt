@@ -1,0 +1,27 @@
+@primary-color: #ffffff; /* Cor de fundo branca */
+@font-color: #000000; /* Cor da fonte preta */
+@button-color: #ff5733; /* Cor do botão laranja */
+@button-hover-color: #c70039; /* Cor do botão ao passar o mouse */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: @primary-color;
+    color: @font-color;
+    padding: 20px;
+}
+
+h1 {
+    color: @font-color;
+}
+
+button {
+    background-color: @button-color;
+    border: none;
+    padding: 10px 20px;
+    color: @primary-color;
+    cursor: pointer;
+
+    &:hover {
+        background-color: @button-hover-color;
+    }
+}
